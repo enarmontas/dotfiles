@@ -1,0 +1,17 @@
+# Vim
+alias macv="open -a MacVim.app $1"
+alias v=vim
+alias :q=exit
+
+# Git
+alias git_clean='git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d'
+
+# System
+alias reload!=". ~/.zshrc"
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key copied!'"
+
+# Troubleshooting
+alias dns1="nslookup cloudflare.com"
+alias dns2="nslookup google.com"
+alias p1="ping 1.1.1.1"
+alias p2="ping 8.8.8.8"

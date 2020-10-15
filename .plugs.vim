@@ -1,0 +1,10 @@
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-endwise'
+call plug#end()
