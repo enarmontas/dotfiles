@@ -1,0 +1,20 @@
+# Login to a Docker container
+function dlogin() {
+ if [[ ! "$1" ]] ; then
+     echo "Please provide container name or ID"
+     return 0
+ fi
+
+ docker exec -it $1 bash
+ return 0
+}
+
+# Delete a given line number from the known_hosts file
+function knownrm() {
+ re='^[0-9]+$'
+ if ! [[ $1 =~ $re ]] ; then
+   echo "Please provide a line number" >&2;
+ else
+   sed -i '' "$1d" ~/.ssh/known_hosts
+ fi
+}

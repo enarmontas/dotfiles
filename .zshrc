@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Theme: https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="clean"
 
-# Completion
+# Hyphen insensitive completion
 HYPHEN_INSENSITIVE="true"
 
 # Command auto-correction
@@ -26,12 +26,8 @@ plugins=(
   gem
   git
   github
-  gitignore
-  kitchen
   knife
   knife_ssh
-  kubectl
-  minikube
   nmap
   node
   osx
@@ -42,17 +38,23 @@ plugins=(
   rake
   rbenv
   ruby
-  systemd
   vagrant
 )
 
 # Enable oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-# User settings
+# Set projects directory
 export PROJECTS=~/code
+
+# Set editor
 export EDITOR='vim'
+
+# Set language environment
 export LANG=en_US.UTF-8
+
+# Set Homebrew to auto update once a week
+export HOMEBREW_AUTO_UPDATE_SECS=604800
 
 # Include local profile
 if [ -f ~/.localrc ]
@@ -65,6 +67,15 @@ if [ -f ~/.aliases ]
 then
   source ~/.aliases
 fi
+
+# Include functions
+if [ -f ~/.functions ]
+then
+  source ~/.functions
+fi
+
+# Load completion
+autoload -Uz compinit && compinit
 
 # Enable better history
 autoload -U up-line-or-beginning-search
