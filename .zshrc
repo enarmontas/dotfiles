@@ -50,6 +50,9 @@ export PROJECTS=~/code
 # Set editor
 export EDITOR='vim'
 
+# Set prompt: "directory/ (master✗) $"
+PROMPT='%{$fg_bold[green]%}➜%{$fg_bold[green]%}%p %{$fg_bold[blue]%}%c $(git_prompt_info)% %{$reset_color%}'
+
 # Set language environment
 export LANG=en_US.UTF-8
 
