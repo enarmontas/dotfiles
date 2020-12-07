@@ -2,7 +2,7 @@
 source ~/.plugs.vim
 
 " Show line numbers
-set number
+set relativenumber
 
 " Enable 24-bit color terminal support inside Vim
 if (empty($TMUX))
@@ -26,6 +26,7 @@ highlight LineNr ctermfg=DarkGrey
 map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeGitStatusConcealBrackets = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden = 1

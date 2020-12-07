@@ -1,5 +1,5 @@
 # Path
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/bin:$PATH
 
 # Path to oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
@@ -9,9 +9,6 @@ ZSH_THEME="clean"
 
 # Hyphen insensitive completion
 HYPHEN_INSENSITIVE="true"
-
-# Command auto-correction
-ENABLE_CORRECTION="true"
 
 # History command output stamp format: mm/dd/yyyy | dd.mm.yyyy | yyyy-mm-dd
 HIST_STAMPS="yyyy-mm-dd"
