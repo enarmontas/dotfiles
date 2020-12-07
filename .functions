@@ -19,23 +19,14 @@ function knownrm() {
  fi
 }
 
-# Set git user on clone
-git() {
-   if [[ $1 == "clone" ]]; then
-      command git "$@" && set_git_user;
-   else
-      command git "$@";
-   fi;
-}
-
 # https://pilkauskas.lt/tools/2016/09/21/git-config.html
 function set_git_user() {
   if [[ $(git config --get remote.origin.url) == *"vinted"* ]]
   then
     echo "Setting user email to Vinted for the project"
-    git config user.email ernestas.narmontas@vinted.com
+    git config --local user.email ernestas.narmontas@vinted.com
   else
     echo "Setting user email to personal for the project"
-    git config user.email ernestas@narmontas.eu
+    git config --local user.email ernestas@narmontas.eu
   fi
 }

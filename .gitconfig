@@ -1,6 +1,6 @@
 [user]
-  name = Ernestas Narmontas
-  email = (none)
+	name = Ernestas Narmontas
+	useconfigonly = true
 [alias]
   st = status
   ci = commit
