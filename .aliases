@@ -6,6 +6,9 @@ alias :q=exit
 # Git
 alias git_clean='git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d'
 
+# Chef
+alias chef_clean='rm -f Berksfile.lock && rm -rf .kitchen'
+
 # System
 alias reload!=". ~/.zshrc"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo 'Public key copied!'"
