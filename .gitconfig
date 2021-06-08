@@ -1,6 +1,5 @@
-[user]
-	name = Ernestas Narmontas
-	useconfigonly = true
+[include]
+  path = ~/.gitconfig.local
 [alias]
   st = status
   ci = commit
