@@ -4,6 +4,9 @@ source ~/.plugs.vim
 " Show line numbers
 set relativenumber
 
+" Enable backspace in insert mode
+set backspace=indent,eol,start
+
 " Enable 24-bit color terminal support inside Vim
 if (empty($TMUX))
   if (has("nvim"))
