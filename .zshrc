@@ -1,7 +1,5 @@
 # Path
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH=$HOME/.functions:${GOPATH}/bin:${GOROOT}/bin:$HOME/bin:$PATH
+export PATH=$HOME/.functions:$HOME/bin:$PATH
 
 # Path to oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
