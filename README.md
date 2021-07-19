@@ -1,7 +1,7 @@
 # Dotfiles
 Minimalist `dotfiles` repository.
 
-### Setup
+## Setup
 I am using Ansible role
 [geerlingguy/ansible-role-dotfiles](https://github.com/geerlingguy/ansible-role-dotfiles) and my
 localhost setup playbook
@@ -10,12 +10,12 @@ to configure this repository. It clones the repository to custom path and links 
 dotfiles to my home directory. Every time I edit any of the files, I can then commit the changes
 to this repository.
 
-### Private Files
+## Private Stuff
 Some details are private and only required on certain systems, such as work computer. I made sure
 this config dynamically includes `~/.gitconfig.local` and `~/.localrc` for configuring Git
 credentials and private environment variables.
 
-#### Example
+### Example
 Configure your Git user name and email in `~/.gitconfig.local`:
 ```
 [user]
