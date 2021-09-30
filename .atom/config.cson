@@ -1,0 +1,23 @@
+"*":
+  core:
+    projectHome: "/home/ernestas/code"
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+  "exception-reporting":
+    userId: "9c45fdbb-a65c-4e27-93eb-6a8ef3e6da6a"
+  github:
+    remoteFetchProtocol: "ssh"
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "markdown-preview": {}
+  "one-dark-ui":
+    fontSize: 13
+  terminus:
+    core:
+      workingDirectory: "Active File"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
