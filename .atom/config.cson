@@ -1,10 +1,15 @@
 "*":
+  "atom-terragrunt-hclfmt":
+    extensions: [
+      ".hcl"
+      ".tf"
+    ]
   core:
     projectHome: "/home/ernestas/code"
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
   editor:
-    fontSize: 15
+    fontSize: 16
   "exception-reporting":
     userId: "9c45fdbb-a65c-4e27-93eb-6a8ef3e6da6a"
   github:
