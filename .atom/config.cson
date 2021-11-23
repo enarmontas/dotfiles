@@ -9,7 +9,8 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
   editor:
-    fontSize: 16
+    fontSize: 15
+    preferredLineLength: 99
   "exception-reporting":
     userId: "9c45fdbb-a65c-4e27-93eb-6a8ef3e6da6a"
   github:
@@ -39,6 +40,7 @@
         brightWhite: "#dcdfe4"
         brightYellow: "#e5c07b"
     core:
+      mapTerminalsTo: "Folder"
       workingDirectory: "Active File"
     iconColors:
       black: "#282c34"
@@ -52,9 +54,12 @@
       red: "#e06c75"
       yellow: "#e5c07b"
     style:
+      defaultPanelHeight: "400px"
       theme: "one-dark"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".hashicorp.interpolation.text":
+  editor:
+    showInvisibles: false
