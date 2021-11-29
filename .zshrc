@@ -27,7 +27,7 @@ plugins=(
   knife_ssh
   nmap
   node
-  osx
+  macos
   pip
   pyenv
   python
