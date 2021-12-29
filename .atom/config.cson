@@ -5,11 +5,13 @@
       ".tf"
     ]
   core:
+    disabledPackages: [
+      "ide-yaml"
+    ]
     projectHome: "/home/ernestas/code"
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
   editor:
-    fontSize: 15
     preferredLineLength: 99
   "exception-reporting":
     userId: "9c45fdbb-a65c-4e27-93eb-6a8ef3e6da6a"
