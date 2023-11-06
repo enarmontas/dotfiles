@@ -18,3 +18,12 @@ function knownrm() {
    sed -i '' "$1d" ~/.ssh/known_hosts
  fi
 }
+
+# Run terragrunt or terraform
+function t() {
+  if [ -f "terragrunt.hcl" ]; then
+    command terragrunt "$@"
+  else
+    command terraform "$@"
+  fi
+}
