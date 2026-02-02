@@ -29,7 +29,6 @@ plugins=(
   node
   macos
   pip
-  pyenv
   python
   rails
   rake
