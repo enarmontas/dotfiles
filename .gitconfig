@@ -1,5 +1,7 @@
 [include]
   path = ~/.gitconfig.local
+[includeIf "gitdir:~/vinted/"]
+  path = ~/.gitconfig-work
 [alias]
   st = status
   ci = commit
