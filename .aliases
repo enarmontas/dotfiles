@@ -17,4 +17,4 @@ alias p2="ping 8.8.8.8"
 
 # Python
 alias python=python3
-alias python=pip3
+alias pip=pip3
