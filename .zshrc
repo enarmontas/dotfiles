@@ -1,5 +1,5 @@
 # Path
-export PATH=$HOME/.functions:$HOME/bin:$HOME/.local/bin:$PATH
+export PATH="$HOME/.functions:$HOME/bin:$HOME/.local/bin:$PATH"
 
 # Path to oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
